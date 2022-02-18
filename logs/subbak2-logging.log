@@ -789,3 +789,359 @@ Using generated security password: 5a73800e-b13b-49fd-8b53-2b4b73b0fba7
 2022-02-18 16:43:00.011  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection closed. {executed in 0ms} 
 2022-02-18 16:43:00.011  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.close() returned 
 2022-02-18 16:43:09.746  INFO 22220 --- [SpringApplicationShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2022-02-18 23:57:31.439  INFO 21572 --- [main] com.subbak2.www.WwwApplication           : Starting WwwApplication using Java 15.0.2 on JackBook with PID 21572 (C:\SubCoding\demo_VueSpringBoot\target\classes started by pks07 in C:\SubCoding\demo_VueSpringBoot)
+2022-02-18 23:57:31.441  INFO 21572 --- [main] com.subbak2.www.WwwApplication           : The following profiles are active: '@activatedProperties@'
+2022-02-18 23:57:32.677  INFO 21572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-02-18 23:57:32.687  INFO 21572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 23:57:32.688  INFO 21572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-18 23:57:32.800  INFO 21572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 23:57:32.801  INFO 21572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2022-02-18 23:57:32.823  INFO 21572 --- [main] com.subbak2.www.config.DatabaseConfig    : START getDataSource
+2022-02-18 23:57:32.849  INFO 21572 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-02-18 23:57:33.049  INFO 21572 --- [main] log4jdbc.log4j2                          : 1. Connection opened. {executed in 60ms} 
+2022-02-18 23:57:33.050  INFO 21572 --- [main] log4jdbc.log4j2                          : 1. Connection.new Connection returned 
+2022-02-18 23:57:33.054  INFO 21572 --- [main] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@6bcc3f27
+2022-02-18 23:57:33.055  INFO 21572 --- [main] log4jdbc.log4j2                          : 1. Connection closed. {executed in 1ms} 
+2022-02-18 23:57:33.055  INFO 21572 --- [main] log4jdbc.log4j2                          : 1. Connection.close() returned 
+2022-02-18 23:57:33.057  INFO 21572 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:mariadb://localhost:3306/scor', 'jdbc:h2:mem:testdb'
+2022-02-18 23:57:33.604  INFO 21572 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 61f214b5-c8ce-46b1-92b5-bb6ce4aadc96
+
+2022-02-18 23:57:33.673  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='swagger-ui.html'] with []
+2022-02-18 23:57:33.674  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/index.html'] with []
+2022-02-18 23:57:33.675  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico'] with []
+2022-02-18 23:57:33.675  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-02-18 23:57:33.675  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2022-02-18 23:57:33.676  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/img/**'] with []
+2022-02-18 23:57:33.676  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-02-18 23:57:33.677  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lotto/**'] with []
+2022-02-18 23:57:33.732  INFO 21572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58aa1d72, org.springframework.security.web.context.SecurityContextPersistenceFilter@474749b8, org.springframework.security.web.header.HeaderWriterFilter@39ab5ef7, org.springframework.security.web.csrf.CsrfFilter@224c7de4, org.springframework.security.web.authentication.logout.LogoutFilter@4ae2e781, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29013ef2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19f02280, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33d7765a, org.springframework.security.web.session.SessionManagementFilter@1f884bd6, org.springframework.security.web.access.ExceptionTranslationFilter@12fcb2c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a642e4b]
+2022-02-18 23:57:34.065  INFO 21572 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-02-18 23:57:34.305  INFO 21572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-02-18 23:57:34.332  INFO 21572 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-02-18 23:57:34.350  INFO 21572 --- [main] com.subbak2.www.WwwApplication           : Started WwwApplication in 3.259 seconds (JVM running for 3.559)
+2022-02-18 23:57:56.292  INFO 21572 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 23:57:56.293  INFO 21572 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 23:57:56.295  INFO 21572 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-18 23:58:00.013  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection opened. {executed in 3ms} 
+2022-02-18 23:58:00.014  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.new Connection returned 
+2022-02-18 23:58:00.019  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.getAutoCommit() returned true
+2022-02-18 23:58:00.036  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:00.050  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.commit() returned 
+2022-02-18 23:58:00.052  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:00.053  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:00.054  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 2. Connection.close() returned 
+2022-02-18 23:58:16.247  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection opened. {executed in 4ms} 
+2022-02-18 23:58:16.248  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.new Connection returned 
+2022-02-18 23:58:16.248  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.getAutoCommit() returned true
+2022-02-18 23:58:16.248  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:16.267  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.commit() returned 
+2022-02-18 23:58:16.268  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:16.269  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:16.270  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 3. Connection.close() returned 
+2022-02-18 23:58:16.272  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection opened. {executed in 1ms} 
+2022-02-18 23:58:16.272  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.new Connection returned 
+2022-02-18 23:58:16.274  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.getAutoCommit() returned true
+2022-02-18 23:58:16.274  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:16.275  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.commit() returned 
+2022-02-18 23:58:16.276  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:16.276  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:16.276  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 4. Connection.close() returned 
+2022-02-18 23:58:16.285  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:16.285  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.new Connection returned 
+2022-02-18 23:58:16.285  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.getAutoCommit() returned true
+2022-02-18 23:58:16.286  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:16.286  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.commit() returned 
+2022-02-18 23:58:16.287  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:16.288  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:16.288  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 5. Connection.close() returned 
+2022-02-18 23:58:16.290  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:16.291  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.new Connection returned 
+2022-02-18 23:58:16.292  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.getAutoCommit() returned true
+2022-02-18 23:58:16.292  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:16.293  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.commit() returned 
+2022-02-18 23:58:16.293  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:16.293  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:16.294  INFO 21572 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 6. Connection.close() returned 
+2022-02-18 23:58:21.401  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:21.402  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.new Connection returned 
+2022-02-18 23:58:21.402  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.403  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:21.410  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.commit() returned 
+2022-02-18 23:58:21.411  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:21.412  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:21.412  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 7. Connection.close() returned 
+2022-02-18 23:58:21.452  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:21.453  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection.new Connection returned 
+2022-02-18 23:58:21.453  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.460  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.new PreparedStatement returned 
+2022-02-18 23:58:21.460  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection.prepareStatement(SELECT
+		 
+		DRW_NO
+		, DRW_NO_DATE
+		, FIRST_WINAMNT
+		, FIRST_PRZWNER_CO
+		, FIRST_ACCUMAMNT
+		, TOT_SELLAMNT
+		, DRWT_NO1
+		, DRWT_NO2
+		, DRWT_NO3
+		, DRWT_NO4
+		, DRWT_NO5
+		, DRWT_NO6
+		, BNUS_NO
+	 
+		FROM LOTTO
+		WHERE DRW_NO = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@78f9c1c7
+2022-02-18 23:58:21.462  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.setShort(1, 2) returned 
+2022-02-18 23:58:21.497  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. SELECT DRW_NO , DRW_NO_DATE , FIRST_WINAMNT , FIRST_PRZWNER_CO , FIRST_ACCUMAMNT , TOT_SELLAMNT 
+, DRWT_NO1 , DRWT_NO2 , DRWT_NO3 , DRWT_NO4 , DRWT_NO5 , DRWT_NO6 , BNUS_NO FROM LOTTO WHERE 
+DRW_NO = 2  {executed in 34 ms}
+2022-02-18 23:58:21.498  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.execute() returned true
+2022-02-18 23:58:21.506  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.new ResultSet returned 
+2022-02-18 23:58:21.507  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@18c60a97
+2022-02-18 23:58:21.509  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getMetaData() returned org.mariadb.jdbc.MariaDbResultSetMetaData@1aae8026
+2022-02-18 23:58:21.511  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getType() returned 1003
+2022-02-18 23:58:21.511  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.isClosed() returned false
+2022-02-18 23:58:21.512  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.next() returned true
+2022-02-18 23:58:21.515  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRW_NO) returned 2
+2022-02-18 23:58:21.518  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getDate(DRW_NO_DATE) returned 2002-12-14
+2022-02-18 23:58:21.519  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getLong(FIRST_WINAMNT) returned 2002006800
+2022-02-18 23:58:21.519  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(FIRST_PRZWNER_CO) returned 1
+2022-02-18 23:58:21.520  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getLong(FIRST_ACCUMAMNT) returned 0
+2022-02-18 23:58:21.520  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.wasNull() returned false
+2022-02-18 23:58:21.521  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getLong(TOT_SELLAMNT) returned 4904274000
+2022-02-18 23:58:21.521  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO1) returned 9
+2022-02-18 23:58:21.522  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO2) returned 13
+2022-02-18 23:58:21.522  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO3) returned 21
+2022-02-18 23:58:21.523  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO4) returned 25
+2022-02-18 23:58:21.523  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO5) returned 32
+2022-02-18 23:58:21.524  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(DRWT_NO6) returned 42
+2022-02-18 23:58:21.524  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.getShort(BNUS_NO) returned 2
+2022-02-18 23:58:21.524  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.isClosed() returned false
+2022-02-18 23:58:21.531  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|drw_no |drw_no_date |first_winamnt |first_przwner_co |first_accumamnt |tot_sellamnt |drwt_no1 |drwt_no2 |drwt_no3 |drwt_no4 |drwt_no5 |drwt_no6 |bnus_no |
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|2      |2002-12-14  |2002006800    |1                |0               |4904274000   |9        |13       |21       |25       |32       |42       |2       |
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+
+2022-02-18 23:58:21.532  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.next() returned false
+2022-02-18 23:58:21.532  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. ResultSet.close() returned void
+2022-02-18 23:58:21.533  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@72f076c7
+2022-02-18 23:58:21.533  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@f67580
+2022-02-18 23:58:21.534  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. PreparedStatement.close() returned 
+2022-02-18 23:58:21.535  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:21.536  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 8. Connection.close() returned 
+2022-02-18 23:58:21.616  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:21.617  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.new Connection returned 
+2022-02-18 23:58:21.618  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.619  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:21.622  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.commit() returned 
+2022-02-18 23:58:21.623  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:21.624  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:21.627  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 9. Connection.close() returned 
+2022-02-18 23:58:21.630  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:21.630  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.new Connection returned 
+2022-02-18 23:58:21.630  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.631  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:21.633  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.commit() returned 
+2022-02-18 23:58:21.634  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:21.636  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:21.636  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 10. Connection.close() returned 
+2022-02-18 23:58:21.641  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection opened. {executed in 3ms} 
+2022-02-18 23:58:21.642  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.new Connection returned 
+2022-02-18 23:58:21.642  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.643  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:21.643  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.commit() returned 
+2022-02-18 23:58:21.643  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:21.644  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:21.644  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 11. Connection.close() returned 
+2022-02-18 23:58:21.646  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection opened. {executed in 1ms} 
+2022-02-18 23:58:21.647  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.new Connection returned 
+2022-02-18 23:58:21.647  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.getAutoCommit() returned true
+2022-02-18 23:58:21.648  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:21.650  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.commit() returned 
+2022-02-18 23:58:21.651  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:21.652  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:21.652  INFO 21572 --- [http-nio-80-exec-9] log4jdbc.log4j2                          : 12. Connection.close() returned 
+2022-02-18 23:58:26.995  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:26.996  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.new Connection returned 
+2022-02-18 23:58:26.996  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.getAutoCommit() returned true
+2022-02-18 23:58:26.997  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:26.998  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.commit() returned 
+2022-02-18 23:58:26.999  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:27.000  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:27.000  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 13. Connection.close() returned 
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection.new Connection returned 
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection.getAutoCommit() returned true
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.new PreparedStatement returned 
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection.prepareStatement(SELECT
+		 
+		DRW_NO
+		, DRW_NO_DATE
+		, FIRST_WINAMNT
+		, FIRST_PRZWNER_CO
+		, FIRST_ACCUMAMNT
+		, TOT_SELLAMNT
+		, DRWT_NO1
+		, DRWT_NO2
+		, DRWT_NO3
+		, DRWT_NO4
+		, DRWT_NO5
+		, DRWT_NO6
+		, BNUS_NO
+	 
+		FROM LOTTO
+		WHERE DRW_NO = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5535fac1
+2022-02-18 23:58:27.003  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.setShort(1, 1000) returned 
+2022-02-18 23:58:27.004  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. SELECT DRW_NO , DRW_NO_DATE , FIRST_WINAMNT , FIRST_PRZWNER_CO , FIRST_ACCUMAMNT , TOT_SELLAMNT 
+, DRWT_NO1 , DRWT_NO2 , DRWT_NO3 , DRWT_NO4 , DRWT_NO5 , DRWT_NO6 , BNUS_NO FROM LOTTO WHERE 
+DRW_NO = 1000  {executed in 0 ms}
+2022-02-18 23:58:27.005  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.execute() returned true
+2022-02-18 23:58:27.005  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.new ResultSet returned 
+2022-02-18 23:58:27.006  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@47851ee4
+2022-02-18 23:58:27.007  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getMetaData() returned org.mariadb.jdbc.MariaDbResultSetMetaData@2de3147d
+2022-02-18 23:58:27.007  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getType() returned 1003
+2022-02-18 23:58:27.007  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.isClosed() returned false
+2022-02-18 23:58:27.007  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.next() returned true
+2022-02-18 23:58:27.007  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRW_NO) returned 1000
+2022-02-18 23:58:27.008  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getDate(DRW_NO_DATE) returned 2022-01-29
+2022-02-18 23:58:27.008  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getLong(FIRST_WINAMNT) returned 1246819620
+2022-02-18 23:58:27.008  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(FIRST_PRZWNER_CO) returned 22
+2022-02-18 23:58:27.008  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getLong(FIRST_ACCUMAMNT) returned 27430031640
+2022-02-18 23:58:27.009  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getLong(TOT_SELLAMNT) returned 118628811000
+2022-02-18 23:58:27.009  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO1) returned 2
+2022-02-18 23:58:27.010  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO2) returned 8
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO3) returned 19
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO4) returned 22
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO5) returned 32
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(DRWT_NO6) returned 42
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.getShort(BNUS_NO) returned 39
+2022-02-18 23:58:27.011  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.isClosed() returned false
+2022-02-18 23:58:27.019  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|drw_no |drw_no_date |first_winamnt |first_przwner_co |first_accumamnt |tot_sellamnt |drwt_no1 |drwt_no2 |drwt_no3 |drwt_no4 |drwt_no5 |drwt_no6 |bnus_no |
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|1000   |2022-01-29  |1246819620    |22               |27430031640     |118628811000 |2        |8        |19       |22       |32       |42       |39      |
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+
+2022-02-18 23:58:27.019  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.next() returned false
+2022-02-18 23:58:27.019  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. ResultSet.close() returned void
+2022-02-18 23:58:27.020  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@169651ab
+2022-02-18 23:58:27.020  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@6c0f524a
+2022-02-18 23:58:27.020  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. PreparedStatement.close() returned 
+2022-02-18 23:58:27.021  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:27.021  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 14. Connection.close() returned 
+2022-02-18 23:58:27.025  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection opened. {executed in 3ms} 
+2022-02-18 23:58:27.029  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.new Connection returned 
+2022-02-18 23:58:27.030  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.getAutoCommit() returned true
+2022-02-18 23:58:27.031  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:27.033  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.commit() returned 
+2022-02-18 23:58:27.034  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:27.034  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:27.034  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 15. Connection.close() returned 
+2022-02-18 23:58:27.038  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection opened. {executed in 3ms} 
+2022-02-18 23:58:27.038  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.new Connection returned 
+2022-02-18 23:58:27.038  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.getAutoCommit() returned true
+2022-02-18 23:58:27.039  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:27.040  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.commit() returned 
+2022-02-18 23:58:27.041  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:27.042  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:27.042  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 16. Connection.close() returned 
+2022-02-18 23:58:27.044  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:27.044  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.new Connection returned 
+2022-02-18 23:58:27.045  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.getAutoCommit() returned true
+2022-02-18 23:58:27.045  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:27.045  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.commit() returned 
+2022-02-18 23:58:27.046  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:27.046  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:27.046  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 17. Connection.close() returned 
+2022-02-18 23:58:27.048  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:27.048  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.new Connection returned 
+2022-02-18 23:58:27.049  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.getAutoCommit() returned true
+2022-02-18 23:58:27.049  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:27.050  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.commit() returned 
+2022-02-18 23:58:27.051  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:27.051  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:27.051  INFO 21572 --- [http-nio-80-exec-8] log4jdbc.log4j2                          : 18. Connection.close() returned 
+2022-02-18 23:58:29.329  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:29.329  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.new Connection returned 
+2022-02-18 23:58:29.330  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.getAutoCommit() returned true
+2022-02-18 23:58:29.330  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:29.332  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.commit() returned 
+2022-02-18 23:58:29.333  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:29.335  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:29.335  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 19. Connection.close() returned 
+2022-02-18 23:58:29.337  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:29.339  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection.new Connection returned 
+2022-02-18 23:58:29.339  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection.getAutoCommit() returned true
+2022-02-18 23:58:29.339  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.new PreparedStatement returned 
+2022-02-18 23:58:29.339  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection.prepareStatement(SELECT
+		 
+		DRW_NO
+		, DRW_NO_DATE
+		, FIRST_WINAMNT
+		, FIRST_PRZWNER_CO
+		, FIRST_ACCUMAMNT
+		, TOT_SELLAMNT
+		, DRWT_NO1
+		, DRWT_NO2
+		, DRWT_NO3
+		, DRWT_NO4
+		, DRWT_NO5
+		, DRWT_NO6
+		, BNUS_NO
+	 
+		FROM LOTTO
+		WHERE DRW_NO = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@451825cc
+2022-02-18 23:58:29.340  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.setShort(1, 1001) returned 
+2022-02-18 23:58:29.341  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. SELECT DRW_NO , DRW_NO_DATE , FIRST_WINAMNT , FIRST_PRZWNER_CO , FIRST_ACCUMAMNT , TOT_SELLAMNT 
+, DRWT_NO1 , DRWT_NO2 , DRWT_NO3 , DRWT_NO4 , DRWT_NO5 , DRWT_NO6 , BNUS_NO FROM LOTTO WHERE 
+DRW_NO = 1001  {executed in 1 ms}
+2022-02-18 23:58:29.341  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.execute() returned true
+2022-02-18 23:58:29.342  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.new ResultSet returned 
+2022-02-18 23:58:29.342  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1aa30b
+2022-02-18 23:58:29.342  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.getMetaData() returned org.mariadb.jdbc.MariaDbResultSetMetaData@4d42981a
+2022-02-18 23:58:29.343  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.getType() returned 1003
+2022-02-18 23:58:29.343  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.isClosed() returned false
+2022-02-18 23:58:29.347  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|drw_no |drw_no_date |first_winamnt |first_przwner_co |first_accumamnt |tot_sellamnt |drwt_no1 |drwt_no2 |drwt_no3 |drwt_no4 |drwt_no5 |drwt_no6 |bnus_no |
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+|-------|------------|--------------|-----------------|----------------|-------------|---------|---------|---------|---------|---------|---------|--------|
+
+2022-02-18 23:58:29.347  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.next() returned false
+2022-02-18 23:58:29.348  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. ResultSet.close() returned void
+2022-02-18 23:58:29.348  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3150c6ab
+2022-02-18 23:58:29.348  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@35e2a308
+2022-02-18 23:58:29.349  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. PreparedStatement.close() returned 
+2022-02-18 23:58:29.350  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection closed. {executed in 1ms} 
+2022-02-18 23:58:29.351  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 20. Connection.close() returned 
+2022-02-18 23:58:29.353  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:29.354  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.new Connection returned 
+2022-02-18 23:58:29.355  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.getAutoCommit() returned true
+2022-02-18 23:58:29.356  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:29.357  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.commit() returned 
+2022-02-18 23:58:29.358  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:29.358  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:29.359  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 21. Connection.close() returned 
+2022-02-18 23:58:29.361  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection opened. {executed in 2ms} 
+2022-02-18 23:58:29.361  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.new Connection returned 
+2022-02-18 23:58:29.362  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.getAutoCommit() returned true
+2022-02-18 23:58:29.363  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.setAutoCommit(false) returned 
+2022-02-18 23:58:29.364  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.commit() returned 
+2022-02-18 23:58:29.365  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.setAutoCommit(true) returned 
+2022-02-18 23:58:29.365  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection closed. {executed in 0ms} 
+2022-02-18 23:58:29.366  INFO 21572 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 22. Connection.close() returned 
+2022-02-18 23:59:00.011  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection opened. {executed in 4ms} 
+2022-02-18 23:59:00.012  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.new Connection returned 
+2022-02-18 23:59:00.013  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.getAutoCommit() returned true
+2022-02-18 23:59:00.014  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.setAutoCommit(false) returned 
+2022-02-18 23:59:00.015  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.commit() returned 
+2022-02-18 23:59:00.016  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.setAutoCommit(true) returned 
+2022-02-18 23:59:00.018  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection closed. {executed in 1ms} 
+2022-02-18 23:59:00.018  INFO 21572 --- [pool-2-thread-1] log4jdbc.log4j2                          : 23. Connection.close() returned 
+2022-02-18 23:59:04.657  INFO 21572 --- [SpringApplicationShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
