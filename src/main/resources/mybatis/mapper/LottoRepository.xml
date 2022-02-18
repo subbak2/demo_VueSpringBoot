@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.subbak2.www.repository.LottoRepository">
+
+	<resultMap id="BaseResultMap" type="com.subbak2.www.entity.Lotto">
+		<id column="DRW_NO" property="drwNo" />
+		<result column="DRW_NO_DATE" property="drwNoDate" />
+		<result column="FIRST_WINAMNT" property="firstWinamnt" />
+		<result column="FIRST_PRZWNER_CO" property="firstPrzwnerCo" />
+		<result column="FIRST_ACCUMAMNT" property="firstAccumamnt" />
+		<result column="TOT_SELLAMNT" property="totSellamnt" />
+		<result column="DRWT_NO1" property="drwtNo1" />
+		<result column="DRWT_NO2" property="drwtNo2" />
+		<result column="DRWT_NO3" property="drwtNo3" />
+		<result column="DRWT_NO4" property="drwtNo4" />
+		<result column="DRWT_NO5" property="drwtNo5" />
+		<result column="DRWT_NO6" property="drwtNo6" />
+		<result column="BNUS_NO" property="bnusNo" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		DRW_NO
+		, DRW_NO_DATE
+		, FIRST_WINAMNT
+		, FIRST_PRZWNER_CO
+		, FIRST_ACCUMAMNT
+		, TOT_SELLAMNT
+		, DRWT_NO1
+		, DRWT_NO2
+		, DRWT_NO3
+		, DRWT_NO4
+		, DRWT_NO5
+		, DRWT_NO6
+		, BNUS_NO
+	</sql>
+
+	<select id="findByDrwNo" resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM LOTTO
+		WHERE DRW_NO = #{drwNo}
+	</select>
+
+
+	<insert id="insertLotto">
+		INSERT INTO LOTTO
+		(
+		<include refid="Base_Column_List" />
+		)
+		VALUES (
+		#{lotto.drwNo}
+		, #{lotto.drwNoDate}
+		, #{lotto.firstWinamnt}
+		, #{lotto.firstPrzwnerCo}
+		, #{lotto.firstAccumamnt}
+		, #{lotto.totSellamnt}
+		, #{lotto.drwtNo1}
+		, #{lotto.drwtNo2}
+		, #{lotto.drwtNo3}
+		, #{lotto.drwtNo4}
+		, #{lotto.drwtNo5}
+		, #{lotto.drwtNo6}
+		, #{lotto.bnusNo}
+		)
+	</insert>
+
+</mapper>

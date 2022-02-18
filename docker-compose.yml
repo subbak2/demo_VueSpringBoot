@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+  database:
+    container_name: mariadb
+    image: mariadb
+    volumes:
+      - ~/docker/mariadb/etc/mysql/conf.d:/etc/mysql/conf.d:ro
+      - ~/docker/mariadb/var/lib/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=mariadb
+      - MYSQL_ROOT_HOST=%
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    ports:
+      - 3306:3306
+
+  application:
+    container_name: lotto
+    build: .
+    ports:
+      - 80:80
+    depends_on:
+      - database

@@ -1,0 +1,791 @@
+2022-02-18 16:41:19.304  INFO 15524 --- [main] com.subbak2.www.WwwApplication           : Starting WwwApplication using Java 15.0.2 on JackBook with PID 15524 (C:\SubCoding\demo_VueSpringBoot\target\classes started by pks07 in C:\SubCoding\demo_VueSpringBoot)
+2022-02-18 16:41:19.306  INFO 15524 --- [main] com.subbak2.www.WwwApplication           : The following profiles are active: '@activatedProperties@'
+2022-02-18 16:41:20.270  INFO 15524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-02-18 16:41:20.280  INFO 15524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 16:41:20.282  INFO 15524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-18 16:41:20.359  INFO 15524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 16:41:20.360  INFO 15524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2022-02-18 16:41:20.374  INFO 15524 --- [main] com.subbak2.www.config.DatabaseConfig    : START getDataSource
+2022-02-18 16:41:20.388  INFO 15524 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-02-18 16:41:27.356  INFO 15524 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-02-18 16:41:27.728  INFO 15524 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 771de6ac-8f0a-4338-aa3d-3cf1070530ea
+
+2022-02-18 16:41:27.776  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='swagger-ui.html'] with []
+2022-02-18 16:41:27.777  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/index.html'] with []
+2022-02-18 16:41:27.777  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico'] with []
+2022-02-18 16:41:27.778  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-02-18 16:41:27.778  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2022-02-18 16:41:27.779  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/img/**'] with []
+2022-02-18 16:41:27.779  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-02-18 16:41:27.779  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lotto/**'] with []
+2022-02-18 16:41:27.816  INFO 15524 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd63e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@6839203b, org.springframework.security.web.header.HeaderWriterFilter@13213f26, org.springframework.security.web.csrf.CsrfFilter@2fc49538, org.springframework.security.web.authentication.logout.LogoutFilter@be164d8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d2c345d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@101cf747, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d1c164a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@339f3a55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6db328f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43935e9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@209f3887, org.springframework.security.web.session.SessionManagementFilter@4c319d52, org.springframework.security.web.access.ExceptionTranslationFilter@1a531422, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@329dc214]
+2022-02-18 16:41:27.968  INFO 15524 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-02-18 16:41:28.104  INFO 15524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-02-18 16:41:28.117  INFO 15524 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-02-18 16:41:28.125  INFO 15524 --- [main] com.subbak2.www.WwwApplication           : Started WwwApplication in 9.123 seconds (JVM running for 9.428)
+2022-02-18 16:41:33.040  INFO 15524 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 16:41:33.041  INFO 15524 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 16:41:33.042  INFO 15524 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-18 16:41:33.081 ERROR 15524 --- [http-nio-80-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 34 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 45 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 47 common frames omitted
+
+2022-02-18 16:41:33.092 ERROR 15524 --- [http-nio-80-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 37 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 48 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 50 common frames omitted
+
+2022-02-18 16:41:33.095 ERROR 15524 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 37 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 48 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 50 common frames omitted
+
+2022-02-18 16:41:33.185 ERROR 15524 --- [http-nio-80-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 34 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 45 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 47 common frames omitted
+
+2022-02-18 16:41:33.192 ERROR 15524 --- [http-nio-80-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 37 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 48 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 50 common frames omitted
+
+2022-02-18 16:41:33.196 ERROR 15524 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:309) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:137) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67) ~[spring-tx-5.3.13.jar:5.3.13]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.save(JdbcIndexedSessionRepository.java:816) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository$JdbcSession.access$200(JdbcIndexedSessionRepository.java:665) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:422) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.jdbc.JdbcIndexedSessionRepository.save(JdbcIndexedSessionRepository.java:133) ~[spring-session-jdbc-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.commitSession(SessionRepositoryFilter.java:226) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper.access$100(SessionRepositoryFilter.java:193) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:145) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82) ~[spring-session-core-2.6.0.jar:2.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=mariadb)(port=3306)(type=master) : Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1346) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:634) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:89) ~[mariadb-java-client-2.6.0.jar:na]
+	at net.sf.log4jdbc.sql.jdbcapi.DriverSpy.connect(DriverSpy.java:401) ~[log4jdbc-log4j2-jdbc4.1-1.16.jar:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:265) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	... 37 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:mariadb, port:3306. mariadb
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512) ~[mariadb-java-client-2.6.0.jar:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1341) ~[mariadb-java-client-2.6.0.jar:na]
+	... 48 common frames omitted
+Caused by: java.net.UnknownHostException: mariadb
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250) ~[mariadb-java-client-2.6.0.jar:na]
+	... 50 common frames omitted
+
+2022-02-18 16:42:06.849  INFO 15524 --- [SpringApplicationShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2022-02-18 16:42:40.091  INFO 22220 --- [main] com.subbak2.www.WwwApplication           : Starting WwwApplication using Java 15.0.2 on JackBook with PID 22220 (C:\SubCoding\demo_VueSpringBoot\target\classes started by pks07 in C:\SubCoding\demo_VueSpringBoot)
+2022-02-18 16:42:40.093  INFO 22220 --- [main] com.subbak2.www.WwwApplication           : The following profiles are active: '@activatedProperties@'
+2022-02-18 16:42:41.180  INFO 22220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-02-18 16:42:41.192  INFO 22220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 16:42:41.192  INFO 22220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-18 16:42:41.290  INFO 22220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 16:42:41.291  INFO 22220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1168 ms
+2022-02-18 16:42:41.307  INFO 22220 --- [main] com.subbak2.www.config.DatabaseConfig    : START getDataSource
+2022-02-18 16:42:41.328  INFO 22220 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2022-02-18 16:42:41.498  INFO 22220 --- [main] log4jdbc.log4j2                          : 1. Connection opened. {executed in 41ms} 
+2022-02-18 16:42:41.499  INFO 22220 --- [main] log4jdbc.log4j2                          : 1. Connection.new Connection returned 
+2022-02-18 16:42:41.501  INFO 22220 --- [main] log4jdbc.log4j2                          : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@2525a5b8
+2022-02-18 16:42:41.502  INFO 22220 --- [main] log4jdbc.log4j2                          : 1. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:41.503  INFO 22220 --- [main] log4jdbc.log4j2                          : 1. Connection.close() returned 
+2022-02-18 16:42:41.505  INFO 22220 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:mariadb://localhost:3306/scor', 'jdbc:h2:mem:testdb'
+2022-02-18 16:42:41.830  INFO 22220 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5a73800e-b13b-49fd-8b53-2b4b73b0fba7
+
+2022-02-18 16:42:41.876  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='swagger-ui.html'] with []
+2022-02-18 16:42:41.878  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/index.html'] with []
+2022-02-18 16:42:41.878  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico'] with []
+2022-02-18 16:42:41.878  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-02-18 16:42:41.879  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2022-02-18 16:42:41.879  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/img/**'] with []
+2022-02-18 16:42:41.879  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-02-18 16:42:41.879  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lotto/**'] with []
+2022-02-18 16:42:41.919  INFO 22220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72ecbcb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ae2e781, org.springframework.security.web.header.HeaderWriterFilter@7aea704c, org.springframework.security.web.csrf.CsrfFilter@7fef0b40, org.springframework.security.web.authentication.logout.LogoutFilter@42fc4ac4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b30a50d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4702e7a5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a50c746, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65eb3597, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dd63e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e00bfe2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3709748f, org.springframework.security.web.session.SessionManagementFilter@32507479, org.springframework.security.web.access.ExceptionTranslationFilter@296edc75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2faa55bb]
+2022-02-18 16:42:42.101  INFO 22220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-02-18 16:42:42.234  INFO 22220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-02-18 16:42:42.246  INFO 22220 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-02-18 16:42:42.253  INFO 22220 --- [main] com.subbak2.www.WwwApplication           : Started WwwApplication in 2.459 seconds (JVM running for 2.767)
+2022-02-18 16:42:52.140  INFO 22220 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 16:42:52.140  INFO 22220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 16:42:52.141  INFO 22220 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-18 16:42:52.174  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:52.175  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.new Connection returned 
+2022-02-18 16:42:52.177  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.190  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.205  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.commit() returned 
+2022-02-18 16:42:52.206  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.207  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.207  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 2. Connection.close() returned 
+2022-02-18 16:42:52.211  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:52.212  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.new Connection returned 
+2022-02-18 16:42:52.212  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.212  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.213  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.commit() returned 
+2022-02-18 16:42:52.214  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.215  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:52.215  INFO 22220 --- [http-nio-80-exec-1] log4jdbc.log4j2                          : 3. Connection.close() returned 
+2022-02-18 16:42:52.225  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:52.226  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.new Connection returned 
+2022-02-18 16:42:52.226  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.227  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.232  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.commit() returned 
+2022-02-18 16:42:52.233  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.233  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.234  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 4. Connection.close() returned 
+2022-02-18 16:42:52.238  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:52.238  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.new Connection returned 
+2022-02-18 16:42:52.238  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.239  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.242  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.commit() returned 
+2022-02-18 16:42:52.243  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.243  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.243  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 5. Connection.close() returned 
+2022-02-18 16:42:52.246  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:52.247  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.new Connection returned 
+2022-02-18 16:42:52.247  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.247  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.249  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.commit() returned 
+2022-02-18 16:42:52.249  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.249  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.250  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 6. Connection.close() returned 
+2022-02-18 16:42:52.253  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection opened. {executed in 3ms} 
+2022-02-18 16:42:52.253  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.new Connection returned 
+2022-02-18 16:42:52.253  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.254  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.254  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.commit() returned 
+2022-02-18 16:42:52.254  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.255  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.255  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 7. Connection.close() returned 
+2022-02-18 16:42:52.257  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:52.257  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.new Connection returned 
+2022-02-18 16:42:52.258  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.258  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.260  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.commit() returned 
+2022-02-18 16:42:52.260  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.261  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:52.261  INFO 22220 --- [http-nio-80-exec-2] log4jdbc.log4j2                          : 8. Connection.close() returned 
+2022-02-18 16:42:52.959  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:52.960  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.new Connection returned 
+2022-02-18 16:42:52.960  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.getAutoCommit() returned true
+2022-02-18 16:42:52.961  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:52.962  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.commit() returned 
+2022-02-18 16:42:52.963  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:52.964  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:52.964  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 9. Connection.close() returned 
+2022-02-18 16:42:53.000  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:53.001  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.new Connection returned 
+2022-02-18 16:42:53.001  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.getAutoCommit() returned true
+2022-02-18 16:42:53.002  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:53.003  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.commit() returned 
+2022-02-18 16:42:53.004  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:53.005  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:53.005  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 10. Connection.close() returned 
+2022-02-18 16:42:53.007  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:53.008  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.new Connection returned 
+2022-02-18 16:42:53.008  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.getAutoCommit() returned true
+2022-02-18 16:42:53.008  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:53.010  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.commit() returned 
+2022-02-18 16:42:53.010  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:53.011  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:53.011  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 11. Connection.close() returned 
+2022-02-18 16:42:53.014  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:53.014  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.new Connection returned 
+2022-02-18 16:42:53.014  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.getAutoCommit() returned true
+2022-02-18 16:42:53.014  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:53.015  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.commit() returned 
+2022-02-18 16:42:53.015  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:53.015  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:53.016  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 12. Connection.close() returned 
+2022-02-18 16:42:53.017  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:53.018  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.new Connection returned 
+2022-02-18 16:42:53.018  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.getAutoCommit() returned true
+2022-02-18 16:42:53.018  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:53.020  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.commit() returned 
+2022-02-18 16:42:53.020  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:53.020  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:53.020  INFO 22220 --- [http-nio-80-exec-3] log4jdbc.log4j2                          : 13. Connection.close() returned 
+2022-02-18 16:42:54.254  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection opened. {executed in 5ms} 
+2022-02-18 16:42:54.255  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.new Connection returned 
+2022-02-18 16:42:54.256  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.257  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.260  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.commit() returned 
+2022-02-18 16:42:54.261  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.261  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.262  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 14. Connection.close() returned 
+2022-02-18 16:42:54.269  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection opened. {executed in 3ms} 
+2022-02-18 16:42:54.269  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.new Connection returned 
+2022-02-18 16:42:54.269  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.271  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.272  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.commit() returned 
+2022-02-18 16:42:54.273  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.274  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:54.274  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 15. Connection.close() returned 
+2022-02-18 16:42:54.277  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection opened. {executed in 3ms} 
+2022-02-18 16:42:54.277  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.new Connection returned 
+2022-02-18 16:42:54.278  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.278  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.280  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.commit() returned 
+2022-02-18 16:42:54.280  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.282  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.282  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 16. Connection.close() returned 
+2022-02-18 16:42:54.285  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.285  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.new Connection returned 
+2022-02-18 16:42:54.285  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.286  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.287  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.commit() returned 
+2022-02-18 16:42:54.287  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.287  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.288  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 17. Connection.close() returned 
+2022-02-18 16:42:54.290  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.291  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.new Connection returned 
+2022-02-18 16:42:54.291  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.291  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.294  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.commit() returned 
+2022-02-18 16:42:54.294  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.295  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:54.295  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 18. Connection.close() returned 
+2022-02-18 16:42:54.297  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.297  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.new Connection returned 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.new Connection returned 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.new Connection returned 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.298  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.300  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.commit() returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.commit() returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.commit() returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 20. Connection.close() returned 
+2022-02-18 16:42:54.301  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.302  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.302  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 19. Connection.close() returned 
+2022-02-18 16:42:54.302  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 21. Connection.close() returned 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.new Connection returned 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.new Connection returned 
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.307  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.new Connection returned 
+2022-02-18 16:42:54.308  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.308  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.308  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.309  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.309  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.309  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.commit() returned 
+2022-02-18 16:42:54.310  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.310  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.commit() returned 
+2022-02-18 16:42:54.310  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.commit() returned 
+2022-02-18 16:42:54.310  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.310  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 23. Connection.close() returned 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 22. Connection.close() returned 
+2022-02-18 16:42:54.311  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 24. Connection.close() returned 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.new Connection returned 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.new Connection returned 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.313  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.new Connection returned 
+2022-02-18 16:42:54.314  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.314  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.314  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.314  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.315  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.commit() returned 
+2022-02-18 16:42:54.315  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.315  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.315  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.commit() returned 
+2022-02-18 16:42:54.315  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.commit() returned 
+2022-02-18 16:42:54.316  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 25. Connection.close() returned 
+2022-02-18 16:42:54.316  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.317  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.317  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.317  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 26. Connection.close() returned 
+2022-02-18 16:42:54.317  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.317  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 27. Connection.close() returned 
+2022-02-18 16:42:54.318  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.new Connection returned 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.new Connection returned 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.new Connection returned 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.319  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.commit() returned 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.commit() returned 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.320  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.commit() returned 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 28. Connection.close() returned 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 29. Connection.close() returned 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.321  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 30. Connection.close() returned 
+2022-02-18 16:42:54.322  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.322  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.new Connection returned 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.new Connection returned 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.new Connection returned 
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.getAutoCommit() returned true
+2022-02-18 16:42:54.323  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:54.324  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.commit() returned 
+2022-02-18 16:42:54.324  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.commit() returned 
+2022-02-18 16:42:54.324  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.commit() returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-4] log4jdbc.log4j2                          : 32. Connection.close() returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-5] log4jdbc.log4j2                          : 31. Connection.close() returned 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:54.325  INFO 22220 --- [http-nio-80-exec-6] log4jdbc.log4j2                          : 33. Connection.close() returned 
+2022-02-18 16:42:55.118  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:55.119  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.new Connection returned 
+2022-02-18 16:42:55.119  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.getAutoCommit() returned true
+2022-02-18 16:42:55.119  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:55.120  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.commit() returned 
+2022-02-18 16:42:55.120  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:55.121  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:55.121  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 34. Connection.close() returned 
+2022-02-18 16:42:55.125  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:55.125  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.new Connection returned 
+2022-02-18 16:42:55.125  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.getAutoCommit() returned true
+2022-02-18 16:42:55.126  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:55.127  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.commit() returned 
+2022-02-18 16:42:55.127  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:55.127  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:55.128  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 35. Connection.close() returned 
+2022-02-18 16:42:55.129  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:55.129  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.new Connection returned 
+2022-02-18 16:42:55.129  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.getAutoCommit() returned true
+2022-02-18 16:42:55.130  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:55.131  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.commit() returned 
+2022-02-18 16:42:55.131  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:55.132  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection closed. {executed in 1ms} 
+2022-02-18 16:42:55.132  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 36. Connection.close() returned 
+2022-02-18 16:42:55.135  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection opened. {executed in 2ms} 
+2022-02-18 16:42:55.136  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.new Connection returned 
+2022-02-18 16:42:55.136  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.getAutoCommit() returned true
+2022-02-18 16:42:55.136  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:55.136  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.commit() returned 
+2022-02-18 16:42:55.137  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:55.137  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:55.137  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 37. Connection.close() returned 
+2022-02-18 16:42:55.139  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection opened. {executed in 1ms} 
+2022-02-18 16:42:55.139  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.new Connection returned 
+2022-02-18 16:42:55.140  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.getAutoCommit() returned true
+2022-02-18 16:42:55.140  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.setAutoCommit(false) returned 
+2022-02-18 16:42:55.141  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.commit() returned 
+2022-02-18 16:42:55.141  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.setAutoCommit(true) returned 
+2022-02-18 16:42:55.141  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection closed. {executed in 0ms} 
+2022-02-18 16:42:55.141  INFO 22220 --- [http-nio-80-exec-7] log4jdbc.log4j2                          : 38. Connection.close() returned 
+2022-02-18 16:43:00.005  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection opened. {executed in 3ms} 
+2022-02-18 16:43:00.005  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.new Connection returned 
+2022-02-18 16:43:00.006  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.getAutoCommit() returned true
+2022-02-18 16:43:00.006  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.setAutoCommit(false) returned 
+2022-02-18 16:43:00.009  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.commit() returned 
+2022-02-18 16:43:00.010  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.setAutoCommit(true) returned 
+2022-02-18 16:43:00.011  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection closed. {executed in 0ms} 
+2022-02-18 16:43:00.011  INFO 22220 --- [pool-2-thread-1] log4jdbc.log4j2                          : 39. Connection.close() returned 
+2022-02-18 16:43:09.746  INFO 22220 --- [SpringApplicationShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
